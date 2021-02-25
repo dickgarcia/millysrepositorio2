@@ -140,7 +140,11 @@ a{
 }
 
 .fila3 img{
-    width: 100%;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 30px;
+    object-fit: contain;
+
 
 }
 
