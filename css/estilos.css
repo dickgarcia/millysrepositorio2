@@ -80,6 +80,7 @@ a{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto;
 }
 
 .fila1{
@@ -130,7 +131,7 @@ a{
     padding-left: 25px;
 }
 
-.fila3{
+.fila3 {
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
