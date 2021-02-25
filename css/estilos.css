@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #18b903 ;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-sizing: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #18b903;
+    background: #fff ;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+    display: flex;
+
+
+}
+
+.navegacion{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    text-align: right;
+    flex: 1;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.filas {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fila1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.fila1 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.fila1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color:#fff;
+    padding: 8px 30px;
+    margin:30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+
+.categorias{
+    margin: 70px 0;
+    display: flex;
+}
+
+.fila2{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    
+}
+.fila2 img{
+    width: 100%;
+}
+.contenedor2{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.fila3{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.fila3 img{
+    width: 100%;
+}
+
+.titulo {
+    text-align: center;
+    margin:0 auto 40px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.titulo::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.fila3 p{
+    font-size: 14px;
+}
+
+.rating .fa{
+    color: #ff523b;
+}
+
+.fila3:hover{
+    transform: translateY(-5px);
+}
+
+.frecuentemente {
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.fila1 .frecuentemente-mochila2 {
+    padding: 80px
+
+}
+
+small{
+    color: #555;
+}
+
+/*-------- piepagina --------*/
+
+.piepagina {
+    background: #fff;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+
+}
+.piepagina p{
+    color: #8a8a8a;
+}
+
+.piepagina h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.piepagina-fila1{
+    flex: 1;
+    text-align: center;
+}
+
+.piepagina-fila1 p{
+    text-align: center;
+}
+.piepagina-fila1 img{
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+.piepagina hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menuicono {
+    width: 28px;
+    margin-left: 28px;
+    display: none;
+}
+
+/*-------- todos los productos -------- */
+
+.filas2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+
+}
+select:focus{
+    outline: none;
+}
+
+/*-------- consulta de menu -------- */
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 150px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .menuicono{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/*-------- consulta de menu menor que 600 en tamaño-------- */
+
+@media only screen and (max-width: 600px){
+    .filas {
+        text-align: center;
+    }
+
+    .fila1, .fila2, .fila3{
+        flex-basis: 100%;
+    }
+
+
+}
+
